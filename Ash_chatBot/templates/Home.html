@@ -4,12 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ash chatBot</title>
+    <title>Ash</title>
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
 </head>
 <body>
-    <div class="heading-con">
-        <h2 class="heading">Ash chatBot</h2>
-    </div>
+    <main>
+        <div class="margin-con">
+            <div class="heading-con">
+                <h2 class="heading all-c">AshGPT<span class="sub">chatbot</span></h2>            
+            </div>
+
+            <a href="/signin/"><button class="btn">Signin</button></a>
+            <a href="/login/"><button class="btn">login</button></a>
+
+
+            <div class="bac-change">
+                <div class="btn-hover"></div>
+            </div>
+        </div>
+
+        <div class="result-con"></div>
+
+        <div class="message-input">
+            <textarea tabindex="0" id="area" cols="30" rows="1" placeholder="Message"></textarea>
+        </div>
+    </main>
 </body>
+<script src="{% static 'js/Home.js'%}"></script>
 </html>
